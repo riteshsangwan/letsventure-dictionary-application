@@ -21,7 +21,7 @@ var DEFAULT_NAME = 'ServerError',
   DEFAULT_MESSAGE = 'Internal server error';
 
 var middleware = function(err, req, res, next) {
-  winston.error('Error while processing request [' + JSON.stringify(err) + ']', err);
+  winston.error('Error while processing request [' + JSON.stringify(err) + ']', err.stack);
   if(err instanceof Error) {
     var httpError = new errors.HttpStatusError(err);
     if(err.status_code >= 500) {

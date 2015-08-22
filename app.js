@@ -25,6 +25,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 var bodyParser = require('body-parser');
+app.enable('trust proxy');
 // only use bodyParser for json and urlencoded
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
