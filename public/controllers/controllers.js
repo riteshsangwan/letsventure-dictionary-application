@@ -8,3 +8,7 @@
  */
 
 var appControllers = angular.module('dictionaryApp.controllers', ['dictionaryApp.services']);
+
+appControllers.controller('LandingController', ['$scope', function($scope) {
+
+}]);
