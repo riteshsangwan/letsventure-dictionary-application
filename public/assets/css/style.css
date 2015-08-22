@@ -2,6 +2,10 @@
   float: none;
   margin: 0 auto;
 }
+.vspacer80 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .vspacer40 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -13,4 +17,49 @@
 .grid-header {
   background: #eeeeee;
   border: 1px solid #cacaca;
+}
+.top-header {
+  background: #d3d3d3;
+}
+.top-right-box {
+  border: 1px solid #1988BD;
+  background: #CFDCE2;
+  border-radius: 3px;
+  margin: 10px -5px 10px 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 170px;
+  float: right;
+}
+.top-right-box p {
+  margin-bottom: 5px;
+}
+.no-padding {
+  padding: 0 !important;
+}
+.bookmark-panel {
+  background: #f9f9f9;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-left: 1px solid #1988BD;
+  color: #1988BD;
+}
+.bookmark-panel .bookmark-list {
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+.bookmark-panel .bookmark-list li {
+  padding: 5px;
+}
+.bookmark-panel .bookmark-list li.even {
+  border-top: 1px solid #000;
+}
+.selected-word {
+
+}
+.vspacer-top40 {
+  margin-top: 40px;
+}
+.vspacer-bottom40 {
+  margin-bottom: 40px;
 }

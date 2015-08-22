@@ -56,7 +56,7 @@ exports.add = function(req, res, next) {
 
 /**
  * Clear all the bookmarks
- * Route handler for GET '/api/v1/bookmarks/clear'
+ * Route handler for POST '/api/v1/bookmarks/clear'
  *
  * @param  {Object}     req       Express request instance
  * @param  {Object}     res       Express response instance
@@ -81,6 +81,7 @@ exports.clear = function(req, res, next) {
  * @param  {Function}   next      next function to call next middleware in chain
  */
 exports.download = function(req, res, next) {
+  console.log('download method');
   bookmarkService.download(req.ip, function(err, data) {
     if(err) {
       return next(err);
