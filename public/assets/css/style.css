@@ -2,6 +2,9 @@
   float: none;
   margin: 0 auto;
 }
+.no-margin {
+  margin: 0 !important;
+}
 .vspacer80 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -54,8 +57,23 @@
 .bookmark-panel .bookmark-list li.even {
   border-top: 1px solid #000;
 }
-.selected-word {
-
+.selected-word .word-label {
+  border: 1px solid #000;
+  border-radius: 2px;
+  background: #A3CFE4;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.selected-word .word-label .control-label {
+  margin-top: 5px;
+}
+.selected-word .word .form-control {
+  border: 1px dotted #1988BD !important;
+  background: #ECF5F9;
+}
+.selected-word .word .input-group-addon {
+  border: 1px dotted #1988BD !important;
+  background: #ECF5F9;
 }
 .vspacer-top40 {
   margin-top: 40px;

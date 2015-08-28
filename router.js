@@ -27,7 +27,7 @@ module.exports = function() {
   router.get('/api/v1/bookmarks', bookmarkController.getAll);
   router.post('/api/v1/bookmarks', bookmarkController.add);
   router.post('/api/v1/bookmarks/clear', bookmarkController.clear);
-  router.post('/api/v1/bookmarks/download', bookmarkController.download);
+  router.get('/api/v1/bookmarks/download', bookmarkController.download);
   // miscellaneous
   router.get('/api/v1/apiHits', miscController.apiHits);
   return router;

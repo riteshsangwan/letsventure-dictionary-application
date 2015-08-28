@@ -8,7 +8,7 @@
  */
 
 
-var app = angular.module('dictionaryApp', ['ui.router', 'dictionaryApp.controllers', 'dictionaryApp.services']);
+var app = angular.module('dictionaryApp', ['ui.router', 'dictionaryApp.controllers', 'dictionaryApp.services', 'cgNotify']);
 
 /**
  * App configurations goes here

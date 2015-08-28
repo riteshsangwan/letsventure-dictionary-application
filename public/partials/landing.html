@@ -14,11 +14,16 @@
     <div class="row vspacer40">
         <div class="col col-md-9 no-padding">
             <div class="row selected-word" data-ng-if="wordSelected" data-ng-class="{'vspacer-bottom40': wordSelected}">
-                <div class="col col-md-8">
-                    <span>Selected Word</span>
-                    <div class="input-group">
-                        <input type="text" disabled="disabled" class="form-control" data-ng-model="selectedWord.word">
-                        <span class="input-group-addon">@example.com</span>
+                <div class="col col-md-8 selected-word">
+                    <div class="row">
+                        <div class="col col-md-3 word-label">
+                            <label class="control-label">Selected Word</label>
+                        </div>
+                        <div class="col col-md-8 word input-group">
+                            <input type="text" disabled="disabled" class="form-control" data-ng-model="selectedWord.word">
+                            <span class="input-group-addon" data-ng-click="bookmarkWord()"><i class="glyphicon glyphicon-bookmark"></i></span>
+                            <a data-ng-href="{{selectedWord.audioUrl}}" target="_blank">Play</a>
+                        </div>
                     </div>
                 </div>
             </div>

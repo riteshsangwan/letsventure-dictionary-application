@@ -1,3 +1,4 @@
+/* jshint camelCase: false */
 'use strict';
 
 /**
@@ -23,6 +24,11 @@ var _transform = function(obj) {
   }
   if(obj._id) {
     transformed.id = obj._id;
+  }
+  if(obj.audio_url) {
+    var audioUrl = obj.audio_url;
+    obj.audioUrl = audioUrl;
+    delete obj.audio_url;
   }
   return _.omit(transformed, '_id', '__v', 'password');
 };
